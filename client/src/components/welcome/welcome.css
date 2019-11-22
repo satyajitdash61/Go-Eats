@@ -1,8 +1,13 @@
-#allign{
-    height: 100vh;
-    width: 100wh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: bisque;
+*{
+    margin: 0;
+    padding: 0;
 }
+    .WelcomeScreen{
+        /* margin: 0; */
+        padding: 0;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

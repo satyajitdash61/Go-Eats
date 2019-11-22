@@ -2,9 +2,7 @@ import React from 'react';
 import './welcome.css';
 function Welcome(){
     return(
-        <div id = "allign">
-            <h1>Welcome</h1>
-        </div>
+        <div className="container-fluid WelcomeScreen">Hello World!</div>
     )
 }
 
