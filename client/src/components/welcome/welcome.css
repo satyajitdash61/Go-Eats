@@ -6,8 +6,51 @@
         /* margin: 0; */
         padding: 0;
         height: 100vh;
-        background-color: aqua;
+        background-color: #00155E;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    #innerdiv{
+        height: 90vh;
+        width: 500px;
+        /* background-color: aqua; */
+        display: flex;
+        align-items : center;
+        flex-direction: column;
+    }
+    h1{
+        /* position: relative;
+        top: 100px; */
+        font-family: 'Righteous', cursive;
+        color: white;
+    }
+    img{
+        position: relative;
+        top: 80px;
+        height: 150px;
+        width: 200px;
+    }
+    h4{
+        position: absolute;
+        top: 400px;
+        color: white;
+
+    }
+    button{        
+        background-color: white;
+        height: 50px;
+        width: 200px;
+        border-radius: 30px;
+        border : none;
+        outline: none;
+        color: black;
+    }
+    #userbtn{
+        position: absolute;
+        top: 450px;
+    }
+    #restbtn{
+        position: absolute;
+        top: 520px;
     }
