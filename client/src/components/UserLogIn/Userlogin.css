@@ -71,26 +71,77 @@ nav ul li{
     color: white;
     font-weight: 350;
 }
+#service{
+    height: 10vh;
+    width: 100%;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service_style{
+    
+}
 .characteristics{
     height: 40vh;
+    width: 100%;
     padding-left: 0;
     
 }
 #quality_foods{
-    height: 40vh;
+    height: 50vh;
     width: 33.33%;
     float: left;
-    background-color: royalblue;
-}
-#fast_delivery{
-    height: 40vh;
-    width: 33.33%;
-    float: left;
-    background-color: rgb(65, 225, 126);
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 #original_recipes{
-    height: 40vh;
+    height: 50vh;
     width: 33.33%;
     float: left;
-    background-color: rgb(65, 225, 126);
+    /* background-color: rgb(225, 201, 65); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#delivery{
+    height: 50vh;
+    width: 33.33%;
+    float: left;
+    /* background-color: rgb(225, 201, 65); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#goodfood{
+    top: 0px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#recipe{
+    top: 0px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#takeaway{
+    top: 0px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./Userlogin.css";
 import navlogo from "../../images/navlogo.png";
+import goodfood from "../../images/goodfood.png";
+import recipe from "../../images/recipe.png";
+import takeaway from "../../images/take_away.png"
 
 class UserLoginPage extends Component {
   render() {
@@ -20,15 +23,21 @@ class UserLoginPage extends Component {
             <span id="tag1">Just GoEats it !</span>
         </div>
       </div>
-      <div className="container-fluid characteristics">
+      <div id="service">
+          <span id="service_style">Our Services</span>
+      </div>
+      <div className="characteristics">
         <div id="quality_foods">
-            
-        </div>
-        <div id="fast_delivery">
-
+            <img src={goodfood} alt="" id="goodfood"/>
+            <h5>Quality Foods</h5>
         </div>
         <div id="original_recipes">
-            
+        <img src={recipe} alt="" id="recipe"/>
+            <h5>Good Recipe</h5>
+        </div>
+        <div id="delivery">
+        <img src={takeaway} alt="" id="takeaway"/>
+            <h5>Take Away</h5>
         </div>
       </div>
       </div>
