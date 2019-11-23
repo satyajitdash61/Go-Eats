@@ -15,9 +15,10 @@ class WelcomePage extends Component {
   render() {
     return (
         
-      <div className="container-fluid WelcomeScreen">
+      <div>
           {
         this.state.userLogIn === "homepage"?
+        <div className="container-fluid WelcomeScreen">
           <div id="innerdiv">
             <h1>Go Eats</h1>
             <img src={logo} />
@@ -29,6 +30,7 @@ class WelcomePage extends Component {
               <h5>Restaurant</h5>
             </button>
           </div> 
+        </div>
           : this.state.userLogIn === "User"?
            <UserLoginPage/>
           :
