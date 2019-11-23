@@ -40,7 +40,11 @@ class UserLoginPage extends Component {
             <h5>Take Away</h5>
         </div>
       </div>
+      <div id="footer">
+          <p>&#169; 2019 Go Eats Inc.</p>
       </div>
+      </div>
+      
     );
   }
 }

@@ -15,6 +15,9 @@ nav{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     line-height: 80px;
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
     /* margin-right: 50px; */
 }
 nav ul{
@@ -74,13 +77,15 @@ nav ul li{
 #service{
     height: 10vh;
     width: 100%;
-    background-color: salmon;
+    /* background-color: salmon; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 #service_style{
-    
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    font-weight: 400;
 }
 .characteristics{
     height: 40vh;
@@ -144,4 +149,18 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+#footer{
+    position: relative;
+    
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: white;
+    margin: 0;
 }
