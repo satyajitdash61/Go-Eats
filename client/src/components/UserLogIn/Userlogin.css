@@ -28,3 +28,19 @@ nav ul li{
     font-weight: 500;
     font-size: 18px;
 }
+
+#navlogo{
+    position: relative;
+    top: 7%;
+    left: 3%;
+    height: 60px;
+    width: 80px;
+}
+#tagline{
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    height: 150px;
+    width: 450px;
+    background-color: white;
+}
