@@ -9,10 +9,22 @@
     background-position: center center;
     background-attachment: fixed;
     padding: 0;
-    /* background-color: rgb(212, 204, 204); */
 }
 nav{
     height: 80px;
     width: 100%;
-    background-color: cornsilk;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 80px;
+    /* margin-right: 50px; */
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+
+}
+nav ul li{
+    color: white;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
 }
