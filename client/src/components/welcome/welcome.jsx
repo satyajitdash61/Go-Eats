@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./welcome.css";
 import logo from "../../images/logo.png";
 import UserLoginPage from'../UserLogIn/UserLogin'
+import RestaurantLoginPage from '../RestaurantLogin/RestaurantLogin'
 
 class WelcomePage extends Component {
   
@@ -34,7 +35,7 @@ class WelcomePage extends Component {
           : this.state.userLogIn === "User"?
            <UserLoginPage/>
           :
-          <h1>Restaurant</h1>
+          <RestaurantLoginPage/>
          }
       </div>
     );
