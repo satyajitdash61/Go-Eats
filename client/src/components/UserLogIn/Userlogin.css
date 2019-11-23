@@ -4,7 +4,7 @@
 }
 .main{
     height:90vh;
-    background-image: url(../../images/userbackground.jpg);
+    background-image: url(../../images/food-on-table-326278.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -37,10 +37,60 @@ nav ul li{
     width: 80px;
 }
 #tagline{
-    position: absolute;
+    position: relative;
     top: 28%;
-    right: 5%;
+    left: 5%;
     height: 150px;
-    width: 450px;
-    background-color: white;
+    width: 350px;
+    /* background-color: white; */
+}
+#go{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: white;
+    /* float: right; */
+}
+#eats{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: #00ff00;
+    /* float: right; */
+}
+#hunger{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+#tag{
+    font-size: 20px;
+    color: white;
+    font-weight: 350;
+}
+#tag1{
+    font-size: 20px;
+    color: white;
+    font-weight: 350;
+}
+.characteristics{
+    height: 40vh;
+    padding-left: 0;
+    
+}
+#quality_foods{
+    height: 40vh;
+    width: 33.33%;
+    float: left;
+    background-color: royalblue;
+}
+#fast_delivery{
+    height: 40vh;
+    width: 33.33%;
+    float: left;
+    background-color: rgb(65, 225, 126);
+}
+#original_recipes{
+    height: 40vh;
+    width: 33.33%;
+    float: left;
+    background-color: rgb(65, 225, 126);
 }
