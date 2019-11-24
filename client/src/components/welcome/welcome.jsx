@@ -24,10 +24,10 @@ class WelcomePage extends Component {
             <h1>Go Eats</h1>
             <img src={logo} />
             <h4>Log In as </h4>
-            <button id="userbtn" onClick={() => this.setState({userLogIn:"User"})}>
+            <button className="button" id="userbtn" onClick={() => this.setState({userLogIn:"User"})}>
               <h5>User</h5>
             </button>
-            <button id="restbtn" onClick={() => this.setState({userLogIn:"Restaurant"})}>
+            <button className="button" id="restbtn" onClick={() => this.setState({userLogIn:"Restaurant"})}>
               <h5>Restaurant</h5>
             </button>
           </div> 

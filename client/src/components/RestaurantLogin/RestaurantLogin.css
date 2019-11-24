@@ -4,22 +4,52 @@
 }
 .mainscreen{
     height: 100vh;
-    width: 1350px;
-    background-image: url(../../images/cartoon-pizza-restaurant-vector-ai.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-}
-#blurscreen{
-    height: 100vh;
-    width: 1350px;
-    background-color:rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.9); */
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
 #goeats{
-    
+    position: relative;
+    top:15%;
+    height: 100px;
+    width: 183px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: black; */
+}
+#Go{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: black;
+    /* float: right; */
+}
+#Eats{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: #099709;
+    /* float: right; */
+}
+#inputarea{
+    position: relative;
+    top: 15%;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+}
+#info{
+    font-size: 18px;
+    color: black;
+}
+input{
+    margin-top: 10px;
+    height: 50px;
+}
+#btn2{
+    margin-top: 10px;
+    height: 50px;
+    background-color: blueviolet;
 }
