@@ -89,13 +89,14 @@ nav ul li{
 }
 .characteristics{
     height: 40vh;
-    width: 100%;
+    width: 1350px;
     padding-left: 0;
+    /* background-color: blueviolet; */
     
 }
 #quality_foods{
-    height: 50vh;
-    width: 33.33%;
+    height: 40vh;
+    width: 450px;
     float: left;
     /* background-color: royalblue; */
     display: flex;
@@ -104,8 +105,8 @@ nav ul li{
     flex-direction: column;
 }
 #original_recipes{
-    height: 50vh;
-    width: 33.33%;
+    height: 40vh;
+    width: 450px;
     float: left;
     /* background-color: rgb(225, 201, 65); */
     display: flex;
@@ -114,8 +115,8 @@ nav ul li{
     flex-direction: column;
 }
 #delivery{
-    height: 50vh;
-    width: 33.33%;
+    height: 40vh;
+    width: 450px;
     float: left;
     /* background-color: rgb(225, 201, 65); */
     display: flex;
@@ -149,6 +150,34 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media screen and (max-width:1349px) {
+    .characteristics{
+        width: 100%;
+    }
+    #quality_foods{
+        width: 33.33%;
+    }
+    #original_recipes{
+        width: 33.33%;
+    }
+    #delivery{
+        width: 33.33%;
+    }
+    
+
+}
+@media screen and (max-width:640px) {
+    #quality_foods{
+        width: 100%;
+    }
+    #original_recipes{
+        width: 100%;
+    }
+    #delivery{
+        width: 100%;
+    }
 }
 #footer{
     position: relative;
