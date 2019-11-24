@@ -14,6 +14,9 @@ class RestaurantLoginPage extends Component {
             <input type="password" name="password" id="password" placeholder="Password"/>
             <button id="btn2">Sign in</button>
        </div>
+       <div id="footer1">
+          <p>&#169; 2019 Go Eats Inc.</p>
+      </div>
       </div>
     );
   }

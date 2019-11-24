@@ -4,7 +4,6 @@
 }
 .mainscreen{
     height: 100vh;
-    /* background-color: rgba(0, 0, 0, 0.9); */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -14,16 +13,11 @@
     top:15%;
     height: 100px;
     width: 183px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* background-color: black; */
 }
 #Go{
     font-family: 'Righteous', cursive;
     font-size: 50px;
     color: black;
-    /* float: right; */
 }
 #Eats{
     font-family: 'Righteous', cursive;
@@ -68,7 +62,7 @@
     color: black;
 }
 input{
-    margin-top: 10px;
+    margin-top: 15px;
     height: 50px;
     padding-left: 10px;
 }
@@ -83,4 +77,14 @@ input{
     background-color: #099709;
     color: white;
     transition: 0.5s;
+}
+#footer1{
+    position: absolute;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

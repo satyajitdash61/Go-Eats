@@ -13,7 +13,7 @@ class UserLoginPage extends Component {
         <nav>
           <img src={navlogo} alt="" id="navlogo"/>
           <ul>
-            <li>Sign in</li>
+            <li id="sign-in-button">Sign in</li>
           </ul>
         </nav>
         <div id="tagline">
