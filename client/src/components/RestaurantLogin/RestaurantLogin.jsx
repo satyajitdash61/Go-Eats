@@ -8,7 +8,7 @@ class RestaurantLoginPage extends Component {
        <span id="Go">Go </span><span id="Eats">Eats</span><br/><br/>
        </div>
        <div id="inputarea">
-            <h2>Welcome Back</h2><br/>
+            <h2>Welcome Restaurant</h2><br/>
             <p id="info">Sign in with your id and password.</p>
             <input type="text" name="id" id="id" placeholder="User Id"/>
             <input type="password" name="password" id="password" placeholder="Password"/>

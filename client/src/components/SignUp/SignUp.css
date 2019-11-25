@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainscreen2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#goeats2{
+    position: relative;
+    top:11%;
+    height: 100px;
+    width: 183px;
+}
+#Go2{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: black;
+}
+#Eats2{
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: #099709;
+    /* float: right; */
+}
+#inputarea2{
+    position: relative;
+    top: 10%;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: burlywood; */
+}
+#box2{
+    height: 50px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+@media screen and (max-width:1349px) {
+    #inputarea2{
+        width: 450px;
+    }
+    input{
+        width: 100%;
+    }
+    #btn4{
+        width: 100%;
+    }
+    #box2{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:640px) {
+    #inputarea2{
+        width: 280px;
+    }
+    input{
+        width: 100%;
+    }
+    #btn4{
+        width: 100%;
+    }
+    #box2{
+        width: 100%;
+    }
+}
+#info2{
+    font-size: 18px;
+    color: black;
+}
+input{
+    margin-top: 15px;
+    height: 50px;
+    padding-left: 10px;
+}
+#btn4{
+    margin-top: 10px;
+    height: 50px;
+    border: none;
+    background-color: rgb(209, 209, 209);
+    transition: 0.5s;
+}
+#no_acc1{
+    color: black;
+}
+#signuplink1{
+    color: #099709 !important;
+    cursor: pointer;
+}
+#btn4:hover{
+    background-color: #099709;
+    color: white;
+    transition: 0.5s;
+}
+#footer3{
+    position: absolute;
+    bottom: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

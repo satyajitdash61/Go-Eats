@@ -5,6 +5,7 @@ import navlogo from "../../images/navlogo.png";
 import goodfood from "../../images/goodfood.png";
 import recipe from "../../images/recipe.png";
 import takeaway from "../../images/take_away.png";
+import { withRouter } from "react-router-dom";
 
 class UserLoginPage extends Component {
   constructor() {
@@ -25,7 +26,8 @@ class UserLoginPage extends Component {
                 <ul>
                   <li
                     id="sign-in-button"
-                    onClick={() => this.setState({ page: "thatpage" })}
+                    onClick={() => { this.props.history.push("/signin")
+                      this.setState({ page: "thatpage" })}}
                   >
                     Sign in
                   </li>
@@ -70,4 +72,4 @@ class UserLoginPage extends Component {
     );
   }
 }
-export default UserLoginPage;
+export default withRouter(UserLoginPage);

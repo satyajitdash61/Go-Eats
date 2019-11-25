@@ -1,11 +1,16 @@
 import React from 'react';
-import Welcome from './components/welcome/welcome'
+import Welcome from './components/UserLogIn/UserLogin'
+import SignIn from './components/SignIn/SignIn'
 import './App.css';
+import { Route,Switch,Redirect }from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <Welcome />
+      <Switch>
+        <Route exact path="/"component ={Welcome}/>
+        <Route exact path="/signin"component ={SignIn}/>
+      </Switch>
     </div>
   );
 }

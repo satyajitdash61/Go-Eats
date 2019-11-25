@@ -4,6 +4,7 @@ import logo from "../../images/logo.png";
 import UserLoginPage from'../UserLogIn/UserLogin'
 import RestaurantLoginPage from '../RestaurantLogin/RestaurantLogin'
 
+
 class WelcomePage extends Component {
   
     constructor(){
