@@ -1,19 +1,30 @@
 import React, { Component } from "react";
 import "./Userlogin.css";
+import SignIn from '../SignIn/SignIn'
 import navlogo from "../../images/navlogo.png";
 import goodfood from "../../images/goodfood.png";
 import recipe from "../../images/recipe.png";
 import takeaway from "../../images/take_away.png"
 
 class UserLoginPage extends Component {
+constructor(){
+  super();
+  this.state = {
+    page : "thispage"
+  }
+}
+
   render() {
     return (
         <div>
+{
+  this.state.page === "thispage" ?
+  <div>
       <div className="container-fluid main">
         <nav>
           <img src={navlogo} alt="" id="navlogo"/>
           <ul>
-            <li id="sign-in-button">Sign in</li>
+            <li id="sign-in-button" onClick={()=>this.setState({page:"thatpage"})}>Sign in</li>
           </ul>
         </nav>
         <div id="tagline">
@@ -43,6 +54,10 @@ class UserLoginPage extends Component {
       <div id="footer">
           <p>&#169; 2019 Go Eats Inc.</p>
       </div>
+      </div>
+        : <SignIn/>
+
+      }
       </div>
       
     );
