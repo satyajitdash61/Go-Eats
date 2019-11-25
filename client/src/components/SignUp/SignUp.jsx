@@ -22,9 +22,9 @@ class SignUp extends Component {
             <div id="inputarea2">
                  <h2>Welcome User</h2><br/>
                  <p id="info2">Sign Up with id and password.</p>
-                 <input type="text" name="id2" id="id2" placeholder="User Id"/>
-                 <input type="password" name="password" id="password2" placeholder="Password"/>
-                 <input type="password" name="confirm_password" id="confirm_password2" placeholder="Confirm Password"/>
+                 <input type="text" name="id" onChange={this.handelevents} id="id2" placeholder="User Id"/>
+                 <input type="password" name="password" onChange={this.handelevents} id="password2" placeholder="Password"/>
+                 <input type="password" name="confirm_password" onChange={this.handelevents} id="confirm_password2" placeholder="Confirm Password"/>
                  <button id="btn4" >Sign in</button>
                  <div id="box2">
                  <p id="no_acc1">Already have an account? <span id="signuplink1" onClick={()=>this.setState({page1:"thatpage"})}>Sign in</span></p>
