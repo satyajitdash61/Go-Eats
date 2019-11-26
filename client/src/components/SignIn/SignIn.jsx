@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
 import './SignIn.css';
 import SignUp from '../SignUp/SignUp';
+import { Redirect }  from 'react-router-dom';
  class SignIn extends Component {
 constructor(){
     super();
+    const token = localStorage.getItem('token')
+
+        let loggedin = true
+        if(token == null){
+            loggedin = false
+        }
     this.state = {
         id:"",
         password:"",
-        page1: "thispage"
+        page1: "thispage",
+        loggedin
     };
+    
 }
     handelChange = event => {
         const{name,value} = event.target
@@ -16,14 +25,22 @@ constructor(){
             [name] : value
         })
     }
-    handleSubmit = () =>{
-        
-        console.log(this.state.id)
-        console.log(this.state.password)
+    handleSubmit = e =>{
+        e.preventDefault() 
+        const { id,password}=this.state;
+        if(id==='A' && password==="B"){
+            localStorage.setItem('token',"jvghgjvhg")
+            this.setState({
+                loggedin : true
+            })
+        }
 
         
     }
      render() { 
+         if(this.state.loggedin){
+             return <Redirect to="/home"/>
+         }
          const {id,password} = this.state;
          return ( 
              <div>
