@@ -85,6 +85,7 @@ input{
     height: 50px;
     border: none;
     background-color: rgb(209, 209, 209);
+    outline: none;
     transition: 0.5s;
 }
 #no_acc{
