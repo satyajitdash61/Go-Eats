@@ -12,6 +12,7 @@ router.post('/signup',(req,res,next)=>{
     console.log("here");
     
     const {id,password}=req.body;
+    console.log(id);
     User.findOne({id:id}).then(user=>{
         if(user){
             res.send("This id is already exist");
@@ -52,6 +53,7 @@ router.post('/signup',(req,res,next)=>{
 router.post('/login',(req,res)=>{
     
     const {id,password}=req.body;
+    console.log(id)
     User.findOne({id:id})
              .then(user => {  
             // encrypting password

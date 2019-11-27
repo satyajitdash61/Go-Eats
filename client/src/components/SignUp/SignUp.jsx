@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './SignUp.css';
 import SignIn from "../SignIn/SignIn";
+import axios from 'axios';
+
 
 class SignUp extends Component {
     constructor(){
@@ -19,9 +21,13 @@ class SignUp extends Component {
         })
     }
     handelsubmit = () => {
-        console.log(this.state.id);
-        console.log(this.state.password);
-        console.log(this.state.confirmpassword);
+       const { id,password}=this.state;
+       axios.post('http://localhost:8300/user/signup',{id,password})
+       .then(response => {
+           console.log(response)
+           
+       })
+       .catch(err => {console.log(err)})
     }
     render() { 
         const{id,password,confirmpassword}=this.state;
