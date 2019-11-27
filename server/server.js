@@ -1,10 +1,10 @@
 const express =require('express');
 const bodyparser=require('body-parser')
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://Satyajit:1234@cluster0-xulor.mongodb.net/test";
+const uri = "mongodb+srv://Satyajit:1234@cluster0-xulor.mongodb.net/GoEats";
 
 const app = express();
-const port = process.env.PORT || 8300;
+const port = 8300;
 const cors=require('cors');
 app.use(bodyparser.urlencoded({encoded:false}))
 app.use(bodyparser.json());
@@ -16,7 +16,7 @@ mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true})
 
 
 // app.use('/api',require('./rout'));
-// app.use('/user',require('./user'));
+app.use('/user',require('./user'));
 
 app.listen(port, () => {
 console.log("Port 8300 running on browser...");
