@@ -50,9 +50,8 @@ router.post('/signup',(req,res,next)=>{
 // login handel
 
 router.post('/login',(req,res)=>{
-    console.log("gfjh")
+    
     const {id,password}=req.body;
-
     User.findOne({id:id})
              .then(user => {  
             // encrypting password
@@ -61,7 +60,7 @@ router.post('/login',(req,res)=>{
                                 // console.log(correct)
                                 if(correct){
                                     // res.status("201").send("success");
-                                    res.status("201").json({
+                                    res.status("200").json({
                                         success : true
                                     })
                                 }

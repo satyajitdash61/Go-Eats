@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './SignIn.css';
 import SignUp from '../SignUp/SignUp';
 import { Redirect }  from 'react-router-dom';
+import axios from 'axios';
  class SignIn extends Component {
 constructor(){
     super();
@@ -28,12 +29,18 @@ constructor(){
     handleSubmit = e =>{
         e.preventDefault() 
         const { id,password}=this.state;
-        if(id==='A' && password==="B"){
-            localStorage.setItem('token',"jvghgjvhg")
-            this.setState({
-                loggedin : true
+
+        axios.post('http://localhost:8300/user/login',{id,password})
+            .then(response => {
+                console.log(response)
             })
-        }
+        
+        // if(id==='A' && password==="B"){
+        //     localStorage.setItem('token',"jvghgjvhg")
+        //     this.setState({
+        //         loggedin : true
+        //     })
+        // }
 
         
     }
