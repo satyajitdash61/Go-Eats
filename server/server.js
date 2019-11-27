@@ -1,7 +1,7 @@
 const express =require('express');
 const bodyparser=require('body-parser')
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://dbUser:q9twDpjE06O9oTxd@cluster0-uz0v7.mongodb.net/CarApp?retryWrites=true&w=majority";
+const uri = "mongodb+srv://Satyajit:1234@cluster0-xulor.mongodb.net/test";
 
 const app = express();
 const port = process.env.PORT || 8300;
