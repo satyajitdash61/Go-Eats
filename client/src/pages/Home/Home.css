@@ -8,3 +8,19 @@
     height:100vh;
     /* background-color: aqua; */
 }
+#Items_show{
+    /* height: 80vh;
+    width: 1000px;
+    background-color: violet;
+    padding-left: 50px ; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* text-align: center; */
+    height: 91.5vh;
+    /* align-items: center; */
+    /* justify-items: center; */
+    padding-left: 5%;
+    background-color: violet;
+     margin-top: 0%;
+}

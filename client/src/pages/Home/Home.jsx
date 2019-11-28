@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
-import NavBar from '../../components/NavBar/NavBar'
+import NavBar from '../../components/NavBar/NavBar';
+import Item from '../../components/Item/Item'
 import {Link, Redirect} from 'react-router-dom';
 
 class Home extends Component {
@@ -18,6 +19,8 @@ class Home extends Component {
         }
     }
     render() { 
+        const name = ['satyajit','Gokul','varun'];
+        let arr = name.map(n =><Item name={n}/>)
         if(this.state.loggedin=== false){
             return <Redirect to = '/'/>
         }
@@ -25,7 +28,12 @@ class Home extends Component {
             <div>
                 <div className="container-fluid home">
                 <NavBar/>
-                <h1>U are authorized</h1>
+                <div id="Items_show">
+                <h3>POPULAR MENU ITEMS</h3>
+                    {
+                        arr
+                    }
+                </div>
                 </div>
             </div>
          );
