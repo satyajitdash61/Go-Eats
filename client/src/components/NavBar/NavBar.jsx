@@ -7,9 +7,9 @@ class NavBar extends Component {
     return (
       <div className="">
         <nav>
-          <img src={navlogo} alt="" id="navlogo" />
+          <img src={navlogo} alt="" id="navlogo1" />
           <ul>
-            <li id="sign-in-button"> Sign in  </li>           
+            <li id="log-out-button"> Log Out  </li>           
           </ul>
         </nav>
       </div>
