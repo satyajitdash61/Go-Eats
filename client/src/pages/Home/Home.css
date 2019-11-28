@@ -15,13 +15,13 @@
     padding-left: 50px ; */
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /* text-align: center; */
-    height: 150vh;
+    height: 100vh;
     width: 800px;
     /* align-items: center; */
     /* justify-items: center; */
     padding-left: 5%;
-    background-color: violet;
+    /* background-color: violet; */
      margin-top: 2%;
 }

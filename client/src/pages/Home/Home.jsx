@@ -24,7 +24,15 @@ class Home extends Component {
         }
     }
     render() { 
-        const name = [item1,item2,item3,item4];
+        // const name = [item1,item2,item3,item4,item5];
+        const name = [
+            {image : item1, name : "Baby corn" , price : 250},
+            {image : item2, name : "Fisy fry" , price : 260},
+            {image : item3, name : "Chicken 1" , price : 270},
+            {image : item4, name : "Chicken 2" , price : 280},
+            {image : item5, name : "Chicken 3" , price : 290},
+        ]
+        // {image:item1,name:"",}
         let arr = name.map(n =><Item name={n}/>)
         if(this.state.loggedin=== false){
             return <Redirect to = '/'/>
