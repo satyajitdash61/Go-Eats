@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './SignUp.css';
 import SignIn from "../SignIn/SignIn";
+import { Redirect } from "react-router-dom";
 import axios from 'axios';
 
 
@@ -11,7 +12,8 @@ class SignUp extends Component {
             id:"",
             password:"",
             confirmpassword:"",
-            page1: "thispage"
+            page1: "thispage",
+            status: false
         };
     }
     handelchange = event =>{
@@ -25,7 +27,9 @@ class SignUp extends Component {
        axios.post('http://localhost:8300/user/signup',{id,password})
        .then(response => {
            console.log(response)
-           
+           this.state.status=true;
+           window.location.reload();
+           alert("Successfully Submitted")
        })
        .catch(err => {console.log(err)})
     }
