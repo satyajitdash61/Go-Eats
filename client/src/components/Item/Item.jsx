@@ -6,7 +6,7 @@ class Item extends Component {
         return ( 
             <div id="item_div">
                <div id="Item_pic">
-                   <h1>{this.props.name}</h1>
+                   <img src={this.props.name} alt="" id="item_img"/>
                    </div> 
             </div>
          );
