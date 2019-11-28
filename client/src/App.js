@@ -3,7 +3,7 @@ import Welcome from './components/UserLogIn/UserLogin'
 import SignIn from './components/SignIn/SignIn'
 import './App.css';
 import { Route,Switch,Redirect }from 'react-router-dom'
-import Home from './components/Home/Home'
+import Home from './pages/Home/Home'
 import LogOut from './components/LogOut/LogOut'
 
 function App() {
