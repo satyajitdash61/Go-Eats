@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+
+}
+nav ul li{
+    color: white;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#navlogo{
+    position: relative;
+    top: 7%;
+    left: 3%;
+    height: 60px;
+    width: 80px;
+}
