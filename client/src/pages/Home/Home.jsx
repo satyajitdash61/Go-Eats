@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './Home.css';
+import NavBar from '../../components/NavBar/NavBar'
 import {Link, Redirect} from 'react-router-dom';
 
 class Home extends Component {
@@ -21,8 +23,10 @@ class Home extends Component {
         }
         return ( 
             <div>
+                <div className="container-fluid home">
+                <NavBar/>
                 <h1>U are authorized</h1>
-                <Link to="/logout">Log Out</Link>
+                </div>
             </div>
          );
     }
