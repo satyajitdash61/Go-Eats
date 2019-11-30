@@ -29,7 +29,15 @@
     width: 202px;
     /* background-color: brown; */
 }
-button{
+#plus{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    border: 1px solid #70707070;
+    border-radius: 50%;
+    outline: none;
+}
+#minus{
     background-color: rgb(255, 255, 255);
     height: 30px;
     width: 30px;

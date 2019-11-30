@@ -44,11 +44,11 @@ class SignUp extends Component {
             </div>
             <div id="inputarea2">
                  <h2>Welcome User</h2><br/>
-                 <p id="info2">Sign Up with id and password.</p>
+                 <p id="info2">Sign Up</p>
                  <input type="text" name="id" onChange={this.handelchange} id="id2" placeholder="User Id"/>
                  <input type="password" name="password" onChange={this.handelchange} id="password2" placeholder="Password"/>
                  <input type="password" name="confirmpassword" onChange={this.handelchange} id="confirm_password2" placeholder="Confirm Password"/>
-                 <button id="btn4" onClick={this.handelsubmit}>Sign in</button>
+                 <button id="btn4" onClick={this.handelsubmit}>Sign up</button>
                  <div id="box2">
                  <p id="no_acc1">Already have an account? <span id="signuplink1" onClick={()=>this.setState({page1:"thatpage"})}>Sign in</span></p>
                  

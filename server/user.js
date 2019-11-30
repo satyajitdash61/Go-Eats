@@ -76,5 +76,13 @@ router.post('/login',(req,res)=>{
             console.log("gdgf");
 })
 
+router.get('/food',(req, res) =>{
+    Food.find({})
+    .then(result=>{
+        console.log("here");
+        res.send(result);
+    })
+})
+
 
 module.exports=router;

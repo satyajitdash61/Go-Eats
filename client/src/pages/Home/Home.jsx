@@ -7,6 +7,7 @@ import item2 from '../../images/item2.jpg';
 import item3 from '../../images/item3.jpg';
 import item4 from '../../images/item4.jpg';
 import item5 from '../../images/item5.jpg';
+import video from '../../images/Food Menu Presentation After Effects Template.mp4';
 import {Link, Redirect} from 'react-router-dom';
 
 class Home extends Component {
@@ -20,28 +21,40 @@ class Home extends Component {
         }
 
         this.state = {
-            loggedin
+            loggedin,
+            name : [
+                {id:1,image : item1, name : "Baby corn" , price : 250,count:0},
+                {id:2,image : item2, name : "Fisy fry" , price : 260,count:0},
+                {id:3,image : item3, name : "Chicken Roll" , price : 270,count:0},
+                {id:4,image : item4, name : "Chicken periferry" , price : 280,count:0},
+                {id:5,image : item5, name : "Butter Chicken" , price : 290,count:0},
+            ]
         }
     }
+
+    increment = (event)=>{
+      this.state.name[event].count = this.state.name[event].count + 1;
+      console.log(this.state.name[event])
+    }
+
     render() { 
-        // const name = [item1,item2,item3,item4,item5];
-        const name = [
-            {image : item1, name : "Baby corn" , price : 250},
-            {image : item2, name : "Fisy fry" , price : 260},
-            {image : item3, name : "Chicken 1" , price : 270},
-            {image : item4, name : "Chicken 2" , price : 280},
-            {image : item5, name : "Chicken 3" , price : 290},
-        ]
-        // {image:item1,name:"",}
-        let arr = name.map(n =><Item name={n}/>)
+
+        let arr = this.state.name.map(n =><Item id={n.id} name={n} count={n.count} increment={this.increment}/>)
         if(this.state.loggedin=== false){
             return <Redirect to = '/'/>
         }
         return ( 
+            
+            
             <div>
                 <div className="container-fluid home">
                 <NavBar/>
+                    <video src={video} autoPlay loop muted id="video"></video>
+                </div>
+                <div id="Items_show_parent">
+                <h2>Popular Items</h2>
                 <div id="Items_show">
+                    
                     {
                         arr
                     }
